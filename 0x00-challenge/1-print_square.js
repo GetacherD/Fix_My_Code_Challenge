@@ -23,5 +23,9 @@ for (let i = 0 ; i < size ; i ++) {
 }
 if (isNaN(size))
 {
-    console.log("Not a Number");
+    process.stdout.write("\n");
+}
+if (size == 0)
+{
+    process.stdout.write("\n");
 }
