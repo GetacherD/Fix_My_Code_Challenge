@@ -7,7 +7,7 @@
 */
 
 
-if (process.argv.length != 3) {
+if (process.argv.length < 3) {
     process.stderr.write("Missing argument\n");
     process.stderr.write("Usage: ./1-print_square.js <size>\n");
     process.stderr.write("Example: ./1-print_square.js 8\n");
@@ -19,13 +19,5 @@ for (let i = 0 ; i < size ; i ++) {
     for (let j = 0 ; j < size ; j ++) {
         process.stdout.write("#");
     }
-    process.stdout.write("\n");
-}
-if (isNaN(size))
-{
-    process.stdout.write("\n");
-}
-if (size == 0)
-{
     process.stdout.write("\n");
 }
