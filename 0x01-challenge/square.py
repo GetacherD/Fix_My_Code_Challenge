@@ -7,7 +7,7 @@ Square module
 class Square():
 
     """ Square object Representation"""
-    def __init__(self, **kwargs):
+    def __init__(self, *args, **kwargs):
         """ initialize new square object"""
         self.__width = 0
         self.__height = 0
@@ -60,6 +60,8 @@ class Square():
         return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
+
+        """ str representation of square object """
         return "{}/{}".format(self.width, self.height)
 
 
